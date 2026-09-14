@@ -371,12 +371,63 @@
       padding: 80px 20px;
     }
 
+    .final-content {
+      width: 100%;
+      text-align: center;
+    }
+
     .final-title {
       font-family: Georgia, "Times New Roman", serif;
       font-size: clamp(35px, 9vw, 62px);
       font-weight: 400;
       line-height: 1.5;
       color: #4a2d20;
+      margin-bottom: 14px;
+    }
+
+    .final-names {
+      direction: ltr;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(27px, 7vw, 48px);
+      line-height: 1.4;
+      color: #4a2d20;
+      letter-spacing: 0.5px;
+    }
+
+    .final-names span {
+      display: inline-block;
+      margin: 0 8px;
+      font-size: 0.8em;
+    }
+
+    .final-hearts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      direction: ltr;
+      margin-bottom: 12px;
+    }
+
+    .final-hearts span {
+      display: inline-block;
+      color: #9b6335;
+      line-height: 1;
+    }
+
+    .final-hearts span:nth-child(1),
+    .final-hearts span:nth-child(3) {
+      font-size: 22px;
+    }
+
+    .final-hearts span:nth-child(2) {
+      font-size: 32px;
+    }
+
+    .final-hearts-bottom {
+      margin-top: 18px;
+      margin-bottom: 0;
+      transform: scale(0.85);
     }
 
     /* =====================================================
@@ -665,9 +716,29 @@
 
         <section class="final-section reveal">
 
-          <h2 class="final-title">
-            ننتظر قدومكم
-          </h2>
+          <div class="final-content">
+
+            <div class="final-hearts" aria-hidden="true">
+              <span>♡</span>
+              <span>♥</span>
+              <span>♡</span>
+            </div>
+
+            <h2 class="final-title">
+              ننتظر قدومكم
+            </h2>
+
+            <div class="final-names">
+              Walid <span>&amp;</span> Nardjess
+            </div>
+
+            <div class="final-hearts final-hearts-bottom" aria-hidden="true">
+              <span>♡</span>
+              <span>♥</span>
+              <span>♡</span>
+            </div>
+
+          </div>
 
         </section>
 
